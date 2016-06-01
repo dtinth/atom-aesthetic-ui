@@ -4,4 +4,6 @@
 
 ![Ｓｅｔｔｉｎｇｓ　ｖｉｅｗ　＆　ｍｏｄａｌｓ](http://i.imgur.com/MjX2xqw.png)
 
-![Ｔｅｘｔ　ｅｄｉｔｏｒ　＆　ｔｒｅｅ　ｖｉｅｗ](http://i.imgur.com/zHObmye.png "Ｎｏｔｅ：　Ｕｓｉｎｇ　Ｒｅｄｍｏｎｄ　ｓｙｎｔａｘ　ｔｈｅｍｅ．")
+![Ｔｅｘｔ　ｅｄｉｔｏｒ　＆　ｔｒｅｅ　ｖｉｅｗ](http://i.imgur.com/zHObmye.png)
+
+Ｎｏｔｅ：　Ｕｓｉｎｇ　[Ｒｅｄｍｏｎｄ](https://atom.io/themes/redmond-syntax)　ｓｙｎｔａｘ　ｔｈｅｍｅ．
