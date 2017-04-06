@@ -1,25 +1,25 @@
-@import "ui-variables";
-@import "ui-mixins";
-
 atom-text-editor,
-atom-text-editor[mini], atom-text-editor[mini]::shadow,
+atom-text-editor[mini],
 select.form-control,
 .settings-view select.form-control {
   .ui-inset-shadow;
   border-radius: 0;
 }
 
-atom-text-editor[mini], atom-text-editor[mini]::shadow,
+atom-text-editor[mini],
 select.form-control,
 .settings-view select.form-control {
   background-color: white;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 atom-text-editor {
   padding: 2px;
 }
 
-atom-text-editor[mini], atom-text-editor[mini]::shadow {
+atom-text-editor[mini] {
   color: lighten(@text-color, 15%);
 
   border-radius: @component-border-radius;
@@ -32,7 +32,7 @@ atom-text-editor[mini], atom-text-editor[mini]::shadow {
   }
 }
 
-atom-text-editor[mini].is-focused, atom-text-editor[mini].is-focused::shadow {
+atom-text-editor[mini].is-focused {
   color: @text-color;
   background-color: @input-background-color;
   border-color: @input-border-color;
@@ -45,7 +45,7 @@ atom-text-editor[mini].is-focused, atom-text-editor[mini].is-focused::shadow {
 }
 
 // FIXME: these should go in syntax themes?
-atom-text-editor, atom-text-editor::shadow {
+atom-text-editor {
   .gutter.drop-shadow {
     -webkit-box-shadow: -2px 0 10px 2px #222;
   }
