@@ -15,7 +15,7 @@ atom-workspace {
 ::-webkit-scrollbar-thumb {
   background: @button-background-color;
   border-radius: 0px;
-  .ui-raised-glossy-  shadow;
+  .ui-raised-glossy-shadow;
 }
 
 ::-webkit-scrollbar-button:decrement:start,
@@ -26,6 +26,9 @@ atom-workspace {
   width: 16px;
   height: 16px;
   .ui-raised-glossy-shadow;
+  &:active {
+    .ui-inset-shadow;
+  }
 }
 ::-webkit-scrollbar-button:decrement:end,
 ::-webkit-scrollbar-button:increment:start {
