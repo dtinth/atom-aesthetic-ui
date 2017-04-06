@@ -6,10 +6,10 @@ atom-workspace {
   width: 16px;
   height: 16px;
 }
-
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-corner {
-  background: @scrollbar-background-color;
+  background: @scrollbar-background-color url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAEElEQVQIW2P4/58BBP7/BwAT9gP9KaDPqQAAAABJRU5ErkJggg==);
+  image-rendering: pixelated;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -17,7 +17,6 @@ atom-workspace {
   border-radius: 0px;
   .ui-raised-glossy-shadow;
 }
-
 ::-webkit-scrollbar-button:decrement:start,
 ::-webkit-scrollbar-button:increment:end {
   display: block;
@@ -34,7 +33,6 @@ atom-workspace {
 ::-webkit-scrollbar-button:increment:start {
   display: none;
 }
-
 ::-webkit-scrollbar-button:decrement:horizontal {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHCAQAAACFbCRbAAAAGElEQVR4AWOAgv8w6j+M+g+m0ESgTLguANpyD/E2Z/1rAAAAAElFTkSuQmCC);
   background-position: 6px 4px;
