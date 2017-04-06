@@ -2,20 +2,49 @@ atom-workspace {
   background-color: @app-background-color;
 }
 
-.scrollbars-visible-always {
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
 
-  ::-webkit-scrollbar-track,
-  ::-webkit-scrollbar-corner {
-    background: @scrollbar-background-color;
-  }
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: @scrollbar-background-color;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: @scrollbar-color;
-    border-radius: 5px;
-		box-shadow: 0 0 1px white inset;
-  }
+::-webkit-scrollbar-thumb {
+  background: @button-background-color;
+  border-radius: 0px;
+  .ui-raised-glossy-  shadow;
+}
+
+::-webkit-scrollbar-button:decrement:start,
+::-webkit-scrollbar-button:increment:end {
+  display: block;
+  background: @button-background-color center no-repeat;
+  image-rendering: pixelated;
+  width: 16px;
+  height: 16px;
+  .ui-raised-glossy-shadow;
+}
+::-webkit-scrollbar-button:decrement:end,
+::-webkit-scrollbar-button:increment:start {
+  display: none;
+}
+
+::-webkit-scrollbar-button:decrement:horizontal {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHCAQAAACFbCRbAAAAGElEQVR4AWOAgv8w6j+M+g+m0ESgTLguANpyD/E2Z/1rAAAAAElFTkSuQmCC);
+  background-position: 6px 4px;
+}
+::-webkit-scrollbar-button:increment:vertical {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAQAAADoz+32AAAAFUlEQVQIW2Ng+I8CgQCFgxBAAlAOAGvsD/ExLwjJAAAAAElFTkSuQmCC);
+  background-position: 4px 6px;
+}
+::-webkit-scrollbar-button:decrement:vertical {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAQAAADoz+32AAAAF0lEQVR4AWOAgv8gAs4BQwQHIfAfGQIAQQkP8fMDX+YAAAAASUVORK5CYII=);
+  background-position: 4px 6px;
+}
+::-webkit-scrollbar-button:increment:horizontal {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHCAQAAACFbCRbAAAAG0lEQVQI12Ng+M8ABf9hzP8w5n8YE0UEqgYMAAJZD/HvclejAAAAAElFTkSuQmCC);
+  background-position: 6px 4px;
 }
