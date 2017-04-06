@@ -1,6 +1,4 @@
-@import "ui-mixins";
-@import "ui-variables";
-@import "buttons";
+@import "buttons.less";
 
 .panel {
   &.bordered {
@@ -15,7 +13,8 @@ atom-panel, .tool-panel {
 
   background-color: @tool-panel-background-color;
 
-  &.bottom, &.panel-bottom {
+  &.bottom, &.panel-bottom,
+  &.footer, &.footer-bottom {
     border-top: 1px solid @tool-panel-border-color;
   }
 
