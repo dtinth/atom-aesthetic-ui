@@ -5,6 +5,23 @@ atom-pane-container {
     &:focus {
       background-color: @app-background-color;
     }
+
+    .item-views {
+    	.ui-inset-shadow;
+      background: white;
+    }
+    .item-views > * {
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
+      &.settings-view {
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+    }
   }
 
   atom-pane-axis.horizontal > * {
